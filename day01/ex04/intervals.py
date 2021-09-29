@@ -1,57 +1,32 @@
 def main():
-	string = input()
 
-	index = 0
+    string = input()
 
-	firstNumber = 0
-	secondNumber = 0
-	firstOk = False
-	secondOk = False
+    if len(string) == 0:
+        raise EOFError('No input provided')
 
-	while (string[index] == ' ' or string[index] == '\t') and index < len(string) - 1:
-		index += 1
+    string = string.split()
 
-	while string[index] >= '0' and string[index] <= '9' and index < len(string) - 1:
-		firstNumber *= 10
-		firstNumber += ord(string[index]) - ord('0')
-		firstOk = True
-		index += 1
+    if len(string) != 2:
+        raise TypeError('Incorrect type')
 
-	while (string[index] == ' ' or string[index] == '\t') and index < len(string) - 1:
-		index += 1
+    for number in string:
+        if number.isdigit == False:
+            raise TypeError('Incorrect type')
 
-	while string[index] >= '0' and string[index] <= '9' and index < len(string) - 1:
-		secondNumber *= 10
-		secondNumber += ord(string[index]) - ord('0')
-		secondOk = True
-		index += 1
+    firstNumber = int(string[0])
+    secondNumber = int(string[1])
 
-	if string[index] >= '0' and string[index] <= '9':
-		secondNumber *= 10
-		secondNumber += ord(string[index]) - ord('0')
-		secondOk = True
+    if secondNumber < firstNumber:
+        raise ValueError('Invalid interval')
 
-	while index < len(string) - 1:
-		if string[index] != ' ' or string[index] != '\t':
-			raise TypeError('Incorrect type')
-		else:
-			index += 1
+    intervalIncrement = firstNumber
 
-	if firstOk == False and secondOk == False:
-		raise EOFError('No input provided')
+    while intervalIncrement <= secondNumber:
+        print (intervalIncrement, end =" ")
+        intervalIncrement += 1
 
-	if firstOk == False or secondOk == False:
-		raise TypeError('Incorrect type')
+    print (" ")
 
-	if firstNumber == secondNumber:
-		raise ValueError('invalid interval')
-
-	intervalIncrement = firstNumber
-
-	while intervalIncrement <= secondNumber:
-		print (intervalIncrement, end =" ")
-		intervalIncrement += 1
-
-	print (" ")
-
-main()
+if __name__ == "__main__":
+   main()
