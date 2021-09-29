@@ -1,20 +1,18 @@
-import sys
-
 def count_words():
 	wordsNumber = 0
-	string = sys.stdin.readline()
+	string = input()
 
 	index = 0
 
-	while string[index] != '\n' and string[index] != 4:
+	while index < len(string) - 1 and string[index] != 4:
 
-		while string[index] == ' ' or string[index] == '\t':
+		while ( string[index] == ' ' or string[index] == '\t') and index < len(string) - 1:
 			index += 1
 
-		if string[index] != '\n':
+		if string[index] != ' ' and string[index] != '\t':
 			wordsNumber += 1
 
-		while string[index] != '\n' and string[index] != ' ' and string[index] != '\t' and string[index] != 4:
+		while ( string[index] != ' ' and string[index] != '\t') and index < len(string) - 1:
 			index += 1
 
 	if wordsNumber == 0:
