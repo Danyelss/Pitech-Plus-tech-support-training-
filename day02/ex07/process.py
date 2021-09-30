@@ -1,40 +1,29 @@
-import _thread
 import time
-import sys
-import os
-from subprocess import Popen, PIPE
-import subprocess
+import threading
+import multiprocessing
 
+def delayForThreads(minutes):
+    time.sleep( 60 * minutes )
 
+def first_thread_function(numberOfThreads):
+    threads = []
+    for i in range(numberOfThreads):
+        thread = threading.Thread(target=delayForThreads, args=(1,))
+        threads.append(thread)
+        threads[i].start()
 
-def second_thread_function(threadName, minutes):
-    time.sleep(120)
-
-def first_thread_function(threadName, minutes):
-    #process = Popen(['python3', 'process.py', '1', '1', '1', '1'])
-    subprocess.run(["python3", "process.py", '1', '1', '1', '1']) 
-    time.sleep(60 * minutes)
-
+    for i in range(numberOfThreads):
+        threads[i].join()
 
 def main():
-    if len(sys.argv) == 1 :
-        try:
-            _thread.start_new_thread(first_thread_function, ("Thread-1", 2))
-            _thread.start_new_thread(first_thread_function, ("Thread-1", 2))
-            _thread.start_new_thread(first_thread_function, ("Thread-1", 2))
-            _thread.start_new_thread(first_thread_function, ("Thread-1", 2))
-            _thread.start_new_thread(first_thread_function, ("Thread-1", 2))
-        except:
-            print ("Error 1")
-    elif len(sys.argv) == 5 :
-        try:
-            _thread.start_new_thread(second_thread_function, ("Thread-1", 2))
-            _thread.start_new_thread(second_thread_function, ("Thread-1", 2))
-            _thread.start_new_thread(second_thread_function, ("Thread-1", 2))
-        except:
-            print ("Error 2")
+    processes = []
+    for i in range(5):
+        proces = multiprocessing.Process(target=first_thread_function, args=(3,))
+        processes.append(proces)
+        processes[i].start()
 
-    time.sleep(60 * 2)
+    for i in range(5):
+        processes[i].join()
 
 if __name__ == "__main__":
     main()
