@@ -1,0 +1,8 @@
+resource.type="http_load_balancer"
+resource.labels.forwarding_rule_name="http-lb-forwarding-rule"
+
+severity=WARNING
+resource.type="http_load_balancer"
+
+resource.type="http_load_balancer"
+severity=INFO
