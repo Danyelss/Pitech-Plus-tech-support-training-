@@ -7,4 +7,9 @@ Flexible storage and querying of data: datastores maps naturally to object-orien
 Balance of strong and eventual consistency: entity lookups by key and consistent queries <br>
 Encryption at rest: encrypts all data before it is written to disk and decrypts when read by an authorized user. <br>
 Fully managed with no planned downtime: no downtime <br>
+<br>
+A REST API (also known as RESTful API) is an application programming <br>
+interface (API or web API) that conforms to the constraints of REST <br> 
+architectural style and allows for interaction with RESTful web services. <br> 
+REST stands for representational state transfer
 
