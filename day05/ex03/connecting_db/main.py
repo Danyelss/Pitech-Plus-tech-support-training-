@@ -15,7 +15,7 @@ def get_task():
         user_as_dict["name"] = time.key.name
         user_as_dict["price"] = time["price"]
         users.append(user_as_dict)
-    return str(users)
+    return jsonify(users)
 
 @app.route('/api/add', methods=['POST'])
 def create_task():
