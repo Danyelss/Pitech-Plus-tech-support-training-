@@ -1,0 +1,10 @@
+{% extends 'public/base.html' %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block content %}
+    <h1>Welcome to our Hotel</h1>
+    <img src="static/img/random.jpg" alt="random photo">
+    <button onclick="window.location.href='/prices'">Prices</button>
+    <button onclick="window.location.href='/contact'">Contact</button>
+{% endblock %}
