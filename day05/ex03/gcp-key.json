@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "gcp-project-327815",
+  "private_key_id": "738e3b189b763ac9077852d2a1e1a64c10238038",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCdpzl7EimcFBEJ\nZ2hd/gdNGvOSg+S5UCYGfQpM4WyJQ5PbmpdzNoSam/7Ptvwyi5cd/lZ8DjtnkgYz\nN/IewBea2hBPyNp1I6/HiTdysSnPobKmu8W37NIEYedEGdRB5S//yWOgMr0KF+J9\nLT0f+QfcYACrgtWdZIgCsRaGs4Lkj/RWLd5ev4n1ipLxq6giVtMUqs3JHzFPpQtq\nkv8iOdkUtxx2UjLsiicFu7tHCHpeITG3rlM9vucKMbB2lGNruogjt9CEYMZyfTJQ\niOlXV7B3e9m08AT+EC2Njd1Sl5er8yZfACjmjCc0wGn6lX7HMClAHT3Xfrq3FQ5U\nnX+zSk4XAgMBAAECggEABsEG8GPVzoRO5TU96RDx+nardV0bK76S8neMPRZHPRYy\nZm0YDJfgVHNXFkpY7EgYqvCeKeW+MRtgvUmp9hv1UZgCrOMGS5Bs08KS0oy5JYEK\n6KO7aRFx6egmgpS3XYoBEBdDomBUwvLvrBHdFYU+C03oRBtwerQM3k38kLwYtnah\ntwukmnDAzD4W2xRONd7NiaGtGf10DV9DNWR/jfD3HAqCAJNXS2gFS4QBLGA15Z9c\nWi7VFpoWxRvyvW+oJ93BrL/aGoO0U3FqHHt/9hOAqfyz9+R+BcBZv3XSbK9v31vU\nH/EZ/Y0QFWGfs/5HZB6pPxjV0wH/fW9Kk3sVAuuyUQKBgQDeN9qXnXJgLRMU+hCA\nvtZHNBirAitex8H8uuos5LJoimkSu4EL4lwlYDpULRH86/O9UraaLU31UoNFrWMq\nr6u0xfR0fvrSZNzNyjNYx2GRicMSxcQVv01HUM5ux/HaYDoDnUbSgQJD1E5+7ckU\nHOtf2uMk5VeZgMimULBFmLKz+QKBgQC1nqwtbh0e31Ujl/HWreclcZYsDAu84GSZ\nnQ4n/+fPo6g1wvYfSD5qXLem8+f/g0Pq2NbX52T/Cr2Y05x8OFe/9bXZFcwt8DrU\nYVne1R+42tB1D+SruFwn7wqx/4Vhf0wC5TuT2j4m3pJ2GjQVGlpsajv9LljeN4i8\nQUp1R1t2jwKBgQCxEvLmA/mDOAfPnGCQJwHa5WGOy4DB2w3ylQNL2MVt1nVaDv4K\n+UqSIfb44p1F3MNyJroJa3aGuUSPvlWaSzfZKjDcr96wztzAQ5Lc+Kv/7DX8/Ih/\nB9zNqk+FKWDIsgsonCg2T8T9Re1y6Ypks5K/5E1CNlqyoFPDa+K64q3sCQKBgAuz\nQyhSFbItdRCr8zp/TYrN/Hyt8fujARgcVBMjm013H5kHDFALmWnEu1gYEnQVgsSY\nX47dK1Z63KgByez+vDhzndl0XAkBluijtOR0Gm0QO6mu8m5VnCo+bhP1gCQ9zSnK\nlsH5p1Ndt1XAbmaFohml5mNzHuqB7V8jXaaciDnlAoGBAKEMbW3oT4hxdqfpgwhm\naV7ZzijFE+AycgR4LKxrVDGwk8Csjr84hR4uxlDlUCWniK+96d2C+tNIEDHE60gy\n2uIfbT7Rt6z3yh90ZNkaXUbZil43rme7zxTol9fy9Z4t0qS7zPyhn/PQXc7LrrWq\nQM+V5/xQ4Y3YNXIQExw355sx\n-----END PRIVATE KEY-----\n",
+  "client_email": "dani-training-gcp@gcp-project-327815.iam.gserviceaccount.com",
+  "client_id": "114878897349549179556",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dani-training-gcp%40gcp-project-327815.iam.gserviceaccount.com"
+}
