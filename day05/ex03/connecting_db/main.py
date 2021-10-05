@@ -1,7 +1,6 @@
 #!flask/bin/python
-from flask import Flask, jsonify, request, abort, make_response
+from flask import Flask, jsonify, request, abort, make_response, request
 from google.cloud import datastore
-
 app = Flask(__name__)
 
 @app.route('/api/list', methods=['GET'])
@@ -19,9 +18,15 @@ def get_task():
     return str(users)
 
 @app.route('/api/add', methods=['POST'])
-def create_task(item_name, price):
+def create_task():
     # Instantiates a client
     datastore_client = datastore.Client()
+
+    if not request.json or 'name' not in request.json:
+        abort(400)
+
+    item_name = request.json['name']
+    price = request.json['price']
 
     # The kind for the new entity
     kind = "Task"
@@ -31,7 +36,7 @@ def create_task(item_name, price):
 
     # Prepares the new entity
     task = datastore.Entity(key=task_key)
-    task["price"]=str(price)
+    task["price"]=price
 
     # Saves the entity
     datastore_client.put(task)
